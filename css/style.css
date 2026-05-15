@@ -1,0 +1,78 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ca2222;
+  padding: 0.1px;
+}
+
+.factura {
+  max-width: 800px;
+  background: rgb(175, 144, 144);
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.botones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background: #007BFF;
+  color: rgb(221, 20, 20);
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media print {
+  .botones {
+    display: none;
+  }
+
+  body {
+    background: rgb(22, 18, 18);
+  }
+
+  .factura {
+    box-shadow: none;
+  }
+}
